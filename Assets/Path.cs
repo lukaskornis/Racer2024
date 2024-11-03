@@ -5,9 +5,14 @@ public class Path : MonoBehaviour
 {
     public List<Transform> points = new();
 
-    public void GetNextPoint()
+    public Transform GetNextPoint(Transform point)
     {
+	    int index = points.IndexOf(point);
+	    index++;
 
+	    if (index >= points.Count) index = 0;
+
+	    return points[index];
     }
 
     public Transform GetClosestPoint(Vector3 position)
