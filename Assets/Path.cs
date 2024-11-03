@@ -5,6 +5,16 @@ public class Path : MonoBehaviour
 {
     public List<Transform> points = new();
 
+    public void GetNextPoint()
+    {
+
+    }
+
+    public Transform GetClosestPoint(Vector3 position)
+    {
+	    return points[0];
+    }
+
     void OnDrawGizmos()
     {
 	    Gizmos.color = Color.red;
