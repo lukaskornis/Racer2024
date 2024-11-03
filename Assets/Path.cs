@@ -12,7 +12,20 @@ public class Path : MonoBehaviour
 
     public Transform GetClosestPoint(Vector3 position)
     {
-	    return points[0];
+	    float minDistance = float.MaxValue;
+	    Transform closestPoint = points[0];
+
+	    foreach (Transform p in points)
+	    {
+		    float d = Vector3.Distance(p.position, position);
+
+		    if (d < minDistance)
+		    {
+			    minDistance = d;
+			    closestPoint = p;
+		    }
+	    }
+	    return closestPoint;
     }
 
     void OnDrawGizmos()
