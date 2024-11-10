@@ -3,9 +3,11 @@ using UnityEngine;
 // AI CAR
 public class Brain : MonoBehaviour
 {
-    public float speed;
     public Path path;
+    public float minTurnAngle = 1f;
+    public float minTargetDistance = 1f;
     Transform target;
+
 
     Vehicle vehicle;
 
@@ -19,16 +21,20 @@ public class Brain : MonoBehaviour
     void Update()
     {
         vehicle.Gas();
-        vehicle.Turn(1);
 
+        // get turn side
+        float angle = Vector3.SignedAngle(transform.forward, target.position - transform.position, Vector3.up);
+        if (angle < -minTurnAngle || angle > minTurnAngle)
+        {
+            float side = Mathf.Sign(angle);
+            vehicle.Turn(side);
+        }
 
-        transform.position  = Vector3.MoveTowards(transform.position,target.position, speed * Time.deltaTime);
+        // get next checkpoint
         var distance = Vector3.Distance(transform.position, target.position);
-        if (distance < 0.1f)
+        if (distance < minTargetDistance)
         {
             target = path.GetNextPoint(target);
         }
-
-
     }
 }
