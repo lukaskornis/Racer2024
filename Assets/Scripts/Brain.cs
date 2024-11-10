@@ -6,6 +6,7 @@ public class Brain : MonoBehaviour
     public Path path;
     public float minTurnAngle = 1f;
     public float minTargetDistance = 1f;
+    public float turnSensitivity = 30f;
     Transform target;
 
 
@@ -27,7 +28,8 @@ public class Brain : MonoBehaviour
         if (angle < -minTurnAngle || angle > minTurnAngle)
         {
             float side = Mathf.Sign(angle);
-            vehicle.Turn(side);
+            float power = Mathf.Abs( angle) / turnSensitivity;
+            vehicle.Turn(side * power);
         }
 
         // get next checkpoint
