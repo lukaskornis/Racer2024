@@ -33,7 +33,10 @@ public class Vehicle : MonoBehaviour
     void Update()
     {
         speedRatio = speed / maxSpeed;
-        engineSound.pitch = speedRatio;
+        engineSound.pitch = enginePitchCurve.Evaluate(speedRatio);
+
+        // friction
+        speed *= deceleration;
 
         // gas
         var y = rb.velocity.y;

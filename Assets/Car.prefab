@@ -79,12 +79,109 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 2
-  deceleration: 0
+  deceleration: 1
   maxSpeed: 10
   maxReverseSpeed: 0
   speed: 0
   turnSpeed: 120
-  engineSound: {fileID: 0}
+  speedRatio: 0
+  enginePitchCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.003364563
+      value: 0.30517578
+      inSlope: 1.0877088
+      outSlope: 1.0877088
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.20317902
+      value: 0.52983505
+      inSlope: 0.79767275
+      outSlope: 0.79767275
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.22429997
+      value: 0.36996648
+      inSlope: 0.6312436
+      outSlope: 0.6312436
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.2835009
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.40707052
+      value: 0.6487342
+      inSlope: 0.79074776
+      outSlope: 0.79074776
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.41761827
+      value: 0.5183828
+      inSlope: 0.78831553
+      outSlope: 0.78831553
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6007835
+      value: 0.7825091
+      inSlope: 0.8551259
+      outSlope: 0.8551259
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6029118
+      value: 0.63945407
+      inSlope: 0.8584268
+      outSlope: 0.8584268
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.79427755
+      value: 0.8901094
+      inSlope: 0.9069642
+      outSlope: 0.9069642
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.79807687
+      value: 0.7499782
+      inSlope: 0.54921615
+      outSlope: 0.54921615
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1.2382029
+      outSlope: 1.2382029
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  engineSound: {fileID: 6731386835599240089}
 --- !u!82 &6731386835599240089
 AudioSource:
   m_ObjectHideFlags: 0

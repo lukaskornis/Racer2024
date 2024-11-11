@@ -163,6 +163,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Car (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_Volume
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7643940414290319341, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.416595
@@ -295,7 +319,7 @@ Transform:
   m_GameObject: {fileID: 245540049}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -347,6 +371,30 @@ PrefabInstance:
     - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_Name
       value: Car (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_Volume
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7643940414290319341, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -960,6 +1008,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1939501264723555914, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: maxSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939501264723555914, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: acceleration
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939501264723555914, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: deceleration
+      value: 0.99
+      objectReference: {fileID: 0}
     - target: {fileID: 2108884984859507362, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: path
       value: 
@@ -1189,6 +1249,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1606352020}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1693848740 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+  m_PrefabInstance: {fileID: 6782835715667713870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1720633343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1235,6 +1300,30 @@ PrefabInstance:
     - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_Name
       value: Car (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_Volume
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7643940414290319341, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1342,8 +1431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 350159279f4824449a7a33d934d81134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posStep: 0.31
-  offset: {x: 0, y: 0, z: 0}
+  posStep: 0.16
   target: {fileID: 993491631}
   cam: {fileID: 245540052}
 --- !u!4 &2007810548
@@ -1458,6 +1546,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1939501264723555914, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: engineSound
+      value: 
+      objectReference: {fileID: 1693848740}
     - target: {fileID: 2108884984859507362, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: path
       value: 
@@ -1465,6 +1557,30 @@ PrefabInstance:
     - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_Name
       value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249156580210181583, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: m_Volume
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: rolloffMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6731386835599240089, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7643940414290319341, guid: da704d61380e641d9b526dd8eecc2bcb, type: 3}
       propertyPath: m_LocalPosition.x
