@@ -8,6 +8,8 @@ public class Vehicle : MonoBehaviour
     public float maxReverseSpeed;
     public float speed;
     public float turnSpeed;
+    public float speedRatio;
+    public AnimationCurve enginePitchCurve;
 
     public AudioSource engineSound;
     Rigidbody rb;
@@ -30,6 +32,9 @@ public class Vehicle : MonoBehaviour
 
     void Update()
     {
+        speedRatio = speed / maxSpeed;
+        engineSound.pitch = speedRatio;
+
         // gas
         var y = rb.velocity.y;
         rb.velocity = transform.forward * speed;
