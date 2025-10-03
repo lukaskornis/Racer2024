@@ -1,6 +1,6 @@
-# Racer2024
+# Vehicle steering & path planning
 
-A Unity-based racing game featuring AI-driven vehicles with pathfinding algorithms and physics-based vehicle dynamics.
+A C#, Unity-based racing demo featuring AI-driven vehicles with pathfinding algorithms and physics-based vehicle dynamics.
 
 [Play WebGL here!](https://play.unity.com/en/games/6e32a1e0-da7d-4134-9d21-86b9acf70cac/1)
 
