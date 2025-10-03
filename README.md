@@ -19,5 +19,3 @@ Modular design ensures DRY priciples. Both AI and player inputs can control the 
 - **Audio Integration**: Dynamic engine sound system with pitch modulation based on vehicle speed using AnimationCurve interpolation
 - **Camera System**: Smooth camera following with dynamic field-of-view adjustment based on vehicle speed
 - **Input Handling**: Clean input abstraction layer supporting both player and AI control systems
-- **Performance Optimization**: Efficient Update() loops with minimal computational overhead
-
