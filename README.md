@@ -2,7 +2,7 @@
 
 A C#, Unity-based racing demo featuring AI-driven vehicles with pathfinding algorithms and physics-based vehicle dynamics.
 
-[Play WebGL here!](https://play.unity.com/en/games/6e32a1e0-da7d-4134-9d21-86b9acf70cac/1)
+[Try WebGL demo!](https://play.unity.com/en/games/6e32a1e0-da7d-4134-9d21-86b9acf70cac/1)
 
 <img height="250" alt="paveikslas" src="https://github.com/user-attachments/assets/12aca257-aa80-44a2-9e88-586d0569538e" />
 <img height="250" alt="paveikslas" src="https://github.com/user-attachments/assets/ee0d7174-d9d4-4aa0-80d1-ff908532e010" />
